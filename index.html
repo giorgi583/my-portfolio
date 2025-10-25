@@ -10,6 +10,9 @@
   <title>My Portfolio</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -19,10 +22,13 @@
       <h1>adamkeyes</h1>
       <nav>
         <ul>
-          <li><a href="#"><img src="./assets/icons/github.png" alt="github icon"></a></li>
-          <li><a href="#"><img src="./assets/icons/front.png" alt="frontend icon"></a></li>
-          <li><a href="#"><img src="./assets/icons/LinkedIn.png" alt="linkedin icon"></a></li>
-          <li><a href="#"><img src="./assets/icons/twitter.png" alt="twitter icon"></a></li>
+          <li><a target="_blank" href="https://github.com/giorgi583"><i class="fa-brands fa-github"></i></a></li>
+          <li><a target="_blank" href="https://www.frontendmentor.io/profile/giorgi583" class="frontend"><img
+                src="./assets/icons/front.png" alt="frontend icon"></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/giorgi-kutateladze-45086323b/"><i
+                class="fa-brands fa-linkedin"></i></a></li>
+          <li><a target="_blank" href="https://www.facebook.com/giorgi.kutateladze.14"><i
+                class="fa-brands fa-facebook"></i></a></li>
         </ul>
       </nav>
     </div>
@@ -84,18 +90,26 @@
         <button>contact me</button>
       </div>
       <div class="cards">
-        <div class="card"><img src="./assets/images/Bitmap.jpg" alt="">
+        <div class="card">
+          <div class="cardimg"><img src="./assets/images/Bitmap.jpg" alt="">
+            <div class="overlay"> <button class="deskbtn">view project</button> <button class="deskbtn">view
+                code</button></div>
+          </div>
           <h3 class="s3h3">DESIGN PORTFOLIO</h3>
           <div class="cardp">
             <p>html</p>
             <p>css</p>
           </div>
           <div class="cardbtns">
-            <button>view project</button>
-            <button>view code</button>
+            <button class="btn">view project</button>
+            <button class="btn">view code</button>
           </div>
         </div>
-        <div class="card"><img src="./assets/images/Bitmap (1).png" alt="">
+        <div class="card">
+          <div class="cardimg"><img src="./assets/images/Bitmap (1).png" alt="">
+            <div class="overlay"> <button class="deskbtn">view project</button> <button class="deskbtn">view
+                code</button></div>
+          </div>
           <h3 class="s3h3">E-LEARNING LANDING PAGE</h3>
           <div class="cardp">
             <p>html</p>
@@ -106,7 +120,11 @@
             <button>view code</button>
           </div>
         </div>
-        <div class="card"><img src="./assets/images/Bitmap3.png" alt="">
+        <div class="card">
+          <div class="cardimg"><img src="./assets/images/Bitmap3.png" alt="">
+            <div class="overlay"> <button class="deskbtn">view project</button> <button class="deskbtn">view
+                code</button></div>
+          </div>
           <h3 class="s3h3">TODO WEB APP</h3>
           <div class="cardp">
             <p>html</p>
@@ -118,7 +136,11 @@
             <button>view code</button>
           </div>
         </div>
-        <div class="card"><img src="./assets/images/bitmap4.png" alt="">
+        <div class="card">
+          <div class="cardimg"><img src="./assets/images/bitmap4.png" alt="">
+            <div class="overlay"> <button class="deskbtn">view project</button> <button class="deskbtn">view
+                code</button></div>
+          </div>
           <h3 class="s3h3">ENTERTAINMENT WEB APP</h3>
           <div class="cardp">
             <p>html</p>
@@ -130,7 +152,11 @@
             <button>view code</button>
           </div>
         </div>
-        <div class="card"><img src="./assets/images/Bitmap5.png" alt="">
+        <div class="card">
+          <div class="cardimg"><img src="./assets/images/Bitmap5.png" alt="">
+            <div class="overlay"> <button class="deskbtn">view project</button> <button class="deskbtn">view
+                code</button></div>
+          </div>
           <h3 class="s3h3">MEMORY GAME</h3>
           <div class="cardp">
             <p>html</p>
@@ -142,7 +168,11 @@
             <button>view code</button>
           </div>
         </div>
-        <div class="card"><img src="./assets/images/Bitmap6.png" alt="">
+        <div class="card">
+          <div class="cardimg"><img src="./assets/images/Bitmap6.png" alt="">
+            <div class="overlay"> <button class="deskbtn">view project</button> <button class="deskbtn">view
+                code</button></div>
+          </div>
           <h3 class="s3h3">ART GALLERY SHOWCASE</h3>
           <div class="cardp">
             <p>html</p>
@@ -161,25 +191,28 @@
   <footer>
     <div class="contact">
       <div class="conttext">
-      <h2>Contact</h2>
-      <p class="mainp">I would love to hear about your project and how I could help. Please fill in the form, and I’ll
-        get back to you as soon as possible.</p>
-        </div>
-        <form action="">
-          <input type="text" name="" id="" placeholder="NAME">
-          <input type="email" name="" id="" placeholder="EMAIL">
-          <input  type="text" class="bigtxt" placeholder="MESSAGE"></input>
-          <button type="submit">send message</button>
-        </form>
+        <h2>Contact</h2>
+        <p class="mainp">I would love to hear about your project and how I could help. Please fill in the form, and I’ll
+          get back to you as soon as possible.</p>
+      </div>
+      <form action="">
+        <input type="text" name="" id="" placeholder="NAME">
+        <input type="email" name="" id="" placeholder="EMAIL">
+        <input type="text" class="bigtxt" placeholder="MESSAGE"></input>
+        <button type="submit">send message</button>
+      </form>
     </div>
     <div class="header">
       <h1>adamkeyes</h1>
       <nav>
         <ul>
-          <li><a href="#"><img src="./assets/icons/github.png" alt="github icon"></a></li>
-          <li><a href="#"><img src="./assets/icons/front.png" alt="frontend icon"></a></li>
-          <li><a href="#"><img src="./assets/icons/LinkedIn.png" alt="linkedin icon"></a></li>
-          <li><a href="#"><img src="./assets/icons/twitter.png" alt="twitter icon"></a></li>
+          <li><a target="_blank" href="https://github.com/giorgi583"><i class="fa-brands fa-github"></i></a></li>
+          <li><a target="_blank" href="https://www.frontendmentor.io/profile/giorgi583" class="frontend"><img
+                src="./assets/icons/front.png" alt="frontend icon" width="19.68"></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/giorgi-kutateladze-45086323b/"><i
+                class="fa-brands fa-linkedin"></i></a></li>
+          <li><a target="_blank" href="https://www.facebook.com/giorgi.kutateladze.14"><i
+                class="fa-brands fa-facebook"></i></a></li>
         </ul>
       </nav>
     </div>

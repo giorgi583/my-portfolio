@@ -25,17 +25,28 @@ header {
   padding-top: 20px;
   padding-left: 111px;
   padding-right: 110px;
-  
+}
+i {
+  color: var(--white);
+  font-size: 16px;
+}
+i:hover {
+  color: var(--green);
+}
+.frontend {
+  width: 19.68px;
 }
 ul {
   display: flex;
   gap: 25.6px;
 }
 .header {
+  width: 154px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  position: relative;
 }
 h1 {
   font-size: 24px;
@@ -46,15 +57,15 @@ h1 {
 /* section1 */
 .section1 {
   max-width: 375px;
-  margin: auto;
-  padding: 0 16px;
+  min-height: 499px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 499px;
+  margin: auto;
+  padding: 0 16px;
 }
 .profileimage {
-  max-width: 174.21px;
+  width: 174.21px;
   margin: auto;
   margin-top: 49px;
   margin-bottom: 40px;
@@ -73,7 +84,6 @@ button {
 }
 .maintxt {
   max-width: 343px;
-  height: 244px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,6 +149,34 @@ button {
   display: flex;
   flex-direction: column;
 }
+.cardimg {
+  position: relative;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 48px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.cardimg:hover .overlay {
+  opacity: 1;
+}
+.deskbtn {
+  background: transparent;
+}
+.btn {
+  background: transparent;
+}
+button:hover {
+  color: var(--green);
+  cursor: pointer;
+}
 .cardp {
   display: flex;
   gap: 18px;
@@ -169,7 +207,6 @@ footer {
   background-color: var(--grey);
   max-width: 375px;
   padding: 60px 16px;
-  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 87px;
@@ -192,6 +229,12 @@ input {
   padding-bottom: 17px;
   font-size: 16px;
   line-height: 26px;
+}
+input:focus {
+  border-bottom: 1px solid var(--green);
+}
+input:invalid {
+  border-bottom: 1px solid rgba(255, 111, 91, 1);
 }
 .bigtxt {
   height: 107px;
@@ -230,10 +273,18 @@ footer .header {
     width: 768px;
     padding: 29px;
     padding-bottom: 0;
+    justify-content: center;
   }
+
   .header {
+    min-width: 708.49px;
     flex-direction: row;
     justify-content: space-between;
+  }
+  ul {
+    width: 192.49px;
+    justify-content: space-between;
+    gap: 32px;
   }
   h1 {
     font-size: 32px;
@@ -243,13 +294,14 @@ footer .header {
     max-width: 768px;
     flex-direction: row;
     padding: 90px 291px 60px 32px;
+    position: relative;
   }
   .profileimage {
-    max-width: 322px;
+    width: 322px;
     height: 600px;
     position: absolute;
     z-index: -1;
-    top: 0;
+    top: -61px;
     right: 0;
     margin: 0;
   }
@@ -261,7 +313,6 @@ footer .header {
     width: 100%;
     font-size: 72px;
     letter-spacing: -2.05px;
-    height: 233px;
     line-height: 72px;
     text-align: left;
   }
@@ -282,6 +333,145 @@ footer .header {
     row-gap: 52px;
     column-gap: 7px;
     margin: 0;
+    border-bottom: none;
+  }
+  .s2p {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0;
+  }
+  .s2ttl {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1.5px;
+    margin: 0;
+    text-align: left;
+  }
+  i {
+    transform: scale(1.3);
+  }
+  .frontend {
+    width: 21px;
+  }
+  .exp {
+    width: 345px;
+    height: 98px;
+    justify-content: center;
+    margin: 0;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .section3 {
+    max-width: 768px;
+    padding: 100px 30px;
+    padding-top: 0;
+    gap: 60px;
+  }
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+    column-gap: 24px;
+    row-gap: 60px;
+  }
+  .card {
+    max-width: 342px;
+  }
+  .s3header {
+    align-items: center;
+  }
+  footer {
+    max-width: 768px;
+    padding: 60px 30px 40px 30px;
+    gap: 92px;
+  }
+  .contact {
+    padding-left: 133px;
+    padding-right: 131px;
+  }
+  .contact h2 {
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -2.05px;
+  }
+  form button {
+    margin-left: 300px;
+  }
+  footer .header {
+    padding-top: 30px;
+    align-items: flex-end;
+  }
+}
+@media (min-width: 1440px) {
+  header {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    padding-top: 39px;
+  }
+  .header {
+    width: 1080.5px;
+    max-width: 1080.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  h1 {
+    font-size: 32px;
+    letter-spacing: -0.44px;
+  }
+  .section1 {
+    width: 1440px;
+    max-width: 1440px;
+    flex-direction: row;
+    padding: 127px 569px 104px 165px;
+    position: relative;
+  }
+  .profileimage {
+    width: 445px;
+    height: 720px;
+    position: absolute;
+    z-index: -1;
+    top: -70px;
+    right: 165px;
+    margin: 0;
+  }
+  .maintxt {
+    max-width: 706px;
+    align-items: flex-start;
+    padding-bottom: 115px;
+  }
+  .mainttl {
+    width: 100%;
+    font-size: 88px;
+    letter-spacing: -2.5px;
+    line-height: 88px;
+    text-align: left;
+  }
+  .mainp {
+    text-align: left;
+    margin-top: 43px;
+    margin-bottom: 66px;
+    font-size: 18px;
+    line-height: 28px;
+    width: 445px;
+  }
+  .overlay {
+    display: flex;
+  }
+  .section2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1440px;
+    max-width: 1440px;
+    padding: 72px 165px 140px 165px;
+    gap: 0;
+    row-gap: 58px;
+    column-gap: 30px;
+    margin: 0;
+    border-bottom: none;
   }
   .s2p {
     font-size: 18px;
@@ -304,20 +494,64 @@ footer .header {
     align-items: flex-start;
   }
   .section3 {
-    max-width: 768px;
-    padding: 100px 30px;
+    width: 1440px;
+    max-width: 1440px;
+    padding: 0 165px 139px 165px;
+    padding-top: 0;
+    gap: 80px;
   }
   .cards {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0;
-    column-gap: 24px;
-    row-gap: 60px;
+    column-gap: 30px;
+    row-gap: 69px;
   }
   .card {
-    max-width: 342px;
+    max-width: 540px;
+  }
+  .cardbtns {
+    display: none;
   }
   .s3header {
     align-items: center;
+  }
+  footer {
+    width: 1440px;
+    max-width: 1440px;
+    padding: 84px 165px 92px 165px;
+    gap: 92px;
+  }
+  .contact {
+    flex-direction: row;
+    gap: 220px;
+    align-items: flex-start;
+    padding: 0;
+  }
+  .conttext {
+    gap: 36px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .contact h2 {
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+  }
+  form button {
+    margin-left: 301px;
+  }
+  footer .header {
+    padding-top: 47px;
+    align-items: flex-end;
+    width: 1110.49px;
+    max-width: 1110.49px;
+    justify-content: space-between;
+  }
+  i {
+    transform: scale(1.5);
+  }
+  nav {
+    height: 32px;
   }
 }
