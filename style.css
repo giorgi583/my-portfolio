@@ -26,6 +26,7 @@ header {
   padding-left: 111px;
   padding-right: 110px;
 }
+
 i {
   color: var(--white);
   font-size: 16px;
@@ -46,7 +47,6 @@ ul {
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  position: relative;
 }
 h1 {
   font-size: 24px;
@@ -56,6 +56,7 @@ h1 {
 }
 /* section1 */
 .section1 {
+  position: relative;
   max-width: 375px;
   min-height: 499px;
   display: flex;
@@ -64,11 +65,25 @@ h1 {
   margin: auto;
   padding: 0 16px;
 }
+.group26 {
+  position: absolute;
+  top: 17px;
+  right: 180px;
+  height: 129px;
+  width: 430px;
+}
+.oval {
+  position: absolute;
+  top: 162px;
+  left: 311px;
+  width: 129px;
+}
 .profileimage {
   width: 174.21px;
   margin: auto;
   margin-top: 49px;
   margin-bottom: 40px;
+  filter: grayscale(100%);
 }
 button {
   border: none;
@@ -151,6 +166,7 @@ button {
 }
 .cardimg {
   position: relative;
+  overflow: hidden;
 }
 .overlay {
   background: rgba(0, 0, 0, 0.7);
@@ -167,6 +183,7 @@ button {
 .cardimg:hover .overlay {
   opacity: 1;
 }
+
 .deskbtn {
   background: transparent;
 }
@@ -210,6 +227,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 87px;
+  align-items: center;
 }
 form {
   width: 100%;
@@ -255,6 +273,7 @@ form button {
   align-items: center;
   gap: 20px;
 }
+
 .conttext p {
   margin: 0;
 }
@@ -265,8 +284,13 @@ form button {
 }
 footer .header {
   padding-top: 39px;
-  border-top: 1px solid var(--white);
 }
+.headercontent {
+  border-top: 1px solid var(--white);
+  padding-left: 95px;
+  padding-right: 94px;
+}
+
 @media (min-width: 768px) {
   header {
     max-width: 768px;
@@ -296,7 +320,24 @@ footer .header {
     padding: 90px 291px 60px 32px;
     position: relative;
   }
+  .group26 {
+    top: 33px;
+    right: 450px;
+    height: 129px;
+    width: 430px;
+  }
+  .oval {
+    top: 410px;
+    left: 702px;
+    width: 129px;
+  }
+  .profileimg {
+    width: 350px;
+    height: 486px;
+  }
   .profileimage {
+    display: flex;
+    align-items: flex-end;
     width: 322px;
     height: 600px;
     position: absolute;
@@ -304,6 +345,7 @@ footer .header {
     top: -61px;
     right: 0;
     margin: 0;
+    background-color: var(--grey);
   }
   .maintxt {
     max-width: 445px;
@@ -401,6 +443,9 @@ footer .header {
     padding-top: 30px;
     align-items: flex-end;
   }
+  .headercontent {
+    padding: 0;
+  }
 }
 @media (min-width: 1440px) {
   header {
@@ -418,6 +463,17 @@ footer .header {
     flex-direction: row;
     justify-content: space-between;
   }
+  .group26 {
+    top: 62px;
+    right: 1010px;
+    height: 129px;
+    width: 430px;
+  }
+  .oval {
+    top: 450px;
+    left: 766px;
+    width: 129px;
+  }
   h1 {
     font-size: 32px;
     letter-spacing: -0.44px;
@@ -429,7 +485,13 @@ footer .header {
     padding: 127px 569px 104px 165px;
     position: relative;
   }
+  .profileimg {
+    width: 444.88px;
+    height: 618px;
+  }
   .profileimage {
+    display: flex;
+    align-items: flex-end;
     width: 445px;
     height: 720px;
     position: absolute;
@@ -437,6 +499,7 @@ footer .header {
     top: -70px;
     right: 165px;
     margin: 0;
+    background-color: var(--grey);
   }
   .maintxt {
     max-width: 706px;
@@ -499,6 +562,9 @@ footer .header {
     padding: 0 165px 139px 165px;
     padding-top: 0;
     gap: 80px;
+  }
+  .cardimage:hover {
+    transform: scale(1.05);
   }
   .cards {
     flex-direction: row;
