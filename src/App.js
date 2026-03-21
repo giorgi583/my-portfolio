@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect} from 'react'
+import { Toaster } from 'react-hot-toast'
+// components
+import Header from './components/Header'
+import Main from './components/Main'
+import Footer from './components/Footer'
 
-function App() {
+// css
+import './index.css'
+const App = () => {
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
+  useEffect(() => {
+    localStorage.setItem('theme', theme)
+  document.documentElement.classList.add(theme === 'dark' ? theme : "light")
+  document.documentElement.classList.remove(theme === 'dark' ? "light" : 'dark')
+  },
+     [theme])
+
+     useEffect(() => {
+      document.documentElement.classList.add(theme === 'dark' ? theme : 'light')
+      document.documentElement.classList.remove(theme === 'dark' ? 'light' : 'dark')
+     },[])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Toaster />
+    <Header theme = {theme} setTheme = {setTheme}/>
+    <Main />
+    <Footer theme = {theme}/>
+    </>
+  )
 }
 
-export default App;
+export default App
