@@ -5,7 +5,9 @@ const Hero = () => {
   useEffect(() => {
     document.addEventListener('scroll', () => {
       const scroll = document.querySelector('.progress-bar')
+      const rocket = document.querySelector('.rocket-wrapper')
       scroll.style.width = `${(window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100}%`
+      rocket.style.left = `${(window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100}%`
     })
   },[])
   return (
@@ -25,10 +27,12 @@ const Hero = () => {
       className="maintxt">
         <h2 className="mainttl">Nice to meet you! I’m Giorgi.</h2>
         <p className="mainp">Based in Georgia, I’m a full stack developer passionate about building accessible websites that
-          users love.</p>
+          users love, Specializing in modern web technologies and responsive design.</p>
         <button><a href="#contact">contact me</a></button>
       </motion.div>
       </div>
+      <i className='fa-solid fa-arrow-down scroll-indicator'></i>
+      <div className='decor'></div>
     </section>
   )
 }

@@ -3,14 +3,14 @@ import { motion } from 'motion/react'
 const Experience = () => {
   const exp = [{language: 'HTML', level: 'Advanced', icon: <i class="fa-brands fa-html5"></i>}, {language: 'CSS', level: 'advanced', icon: <i class="fa-brands fa-css3-alt"></i>}, {language: 'JavaScript', level: 'advanced', icon: <i class="fa-brands fa-js"></i>}, {language: 'Node.js', level: 'intermediate', icon: <i class="fa-brands fa-node-js"></i>}, {language: 'React', level: 'advanced', icon: <i class="fa-brands fa-react"></i>}, {language: 'Sass', level: 'intermediate', icon: <i class="fa-brands fa-sass"></i>}]
   return (
-    <section className="section2" id='experience'>
+    <section className="section2" id='skills'>
       <div className="container">
       <motion.h1 
       initial={{scale: 0.5, opacity: 0}}
       whileInView={{scale: 1, opacity: 1}}
       transition={{duration: 0.5, delay: 0.2}}
       viewport={{once: true}}
-      className="s2_ttl">Experience</motion.h1>
+      className="s2_ttl">Skills</motion.h1>
       <motion.div 
       initial='hidden'
       whileInView='visible'

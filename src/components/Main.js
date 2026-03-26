@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-
+import { RocketIcon } from 'lucide-react'
 // components
 import Projects from './Projects'
 import Experience from './Experience'
