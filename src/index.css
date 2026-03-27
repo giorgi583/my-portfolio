@@ -112,7 +112,7 @@ i {
 .rocket-wrapper {
   position: fixed;
   top: -5px;
-  left: 0;
+  left: 5px;
   transform-origin: center;
   z-index: 1000;
 }
@@ -309,7 +309,7 @@ button {
   bottom: 0;
   right: 10px;
   font-size: 1.5rem;
-  animation: bounce 1s ease-out infinite;
+  animation: bounce 0.6s linear infinite;
 }
 @keyframes bounce {
   0% {
@@ -521,6 +521,24 @@ input:invalid {
   resize: none;
   color: var(--text-secondary);
 }
+.exp:hover .fa-brands{
+  font-size: 3rem;
+  animation: heartbeat 1s infinite;
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  80% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .scroll-up {
   position: fixed;
   right: 50px;
@@ -534,6 +552,10 @@ input:invalid {
   z-index: 1000;
   box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.3);
   border: none;
+  
+}
+.scrl-anim {
+  animation: bounce 0.3s linear 4s 7;
 }
 form button {
   background-color: var(--bg-secondary);
@@ -802,7 +824,7 @@ flex-shrink: 0;
   bottom: 80px;
   right: 40px;
   font-size: 1.5rem;
-  animation: bounce 1s ease-out infinite;
+  animation: bounce 0.6s linear infinite;
 }
   form button {
     margin-left: 270px;
@@ -871,7 +893,7 @@ flex-shrink: 0;
   bottom: 80px;
   right: 80px;
   font-size: 1.5rem;
-  animation: bounce 1s ease-out infinite;
+  animation: bounce 0.4s linear infinite;
 }
   .headerNav ul a:hover::after {
     width: 100%;
@@ -932,7 +954,7 @@ flex-shrink: 0;
   .profileimage {
     position: absolute;
     top: -70px;
-    right: 145px; /* adjust distance from right */
+    right: 115px; 
     width: 445px;
     min-height: 720px;
     display: flex;

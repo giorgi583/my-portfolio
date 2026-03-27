@@ -6,12 +6,15 @@ import Experience from './Experience'
 import Hero from './Hero'
 const Main = () => {
   const [showButton, setShowButton] = React.useState(false);
+  const [scrll, setScrl] = useState(true);
   useEffect(() => {
     const handlescroll = () => {
       if (window.scrollY > 2000) {
         setShowButton(true);
+          setScrl(true);
       } else {
         setShowButton(false);
+        setScrl(false);
       }
     }
     window.addEventListener('scroll', handlescroll);
@@ -31,7 +34,7 @@ const Main = () => {
 <Hero />
 <Experience />
 <Projects />
- {showButton && <button onClick={scrollUp} className='scroll-up'><i className='fa-solid fa-angle-up'></i></button> }
+ {showButton && <button onClick={scrollUp} className={`scroll-up ${scrll ? 'scrl-anim' : ''}`}><i className='fa-solid fa-angle-up'></i></button> }
     </main>
   )
 }

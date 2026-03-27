@@ -50,7 +50,7 @@ Toast.error(error.message)
         <motion.p initial={{x: -30, opacity: 0}}
       whileInView={{x: 0, opacity: 1}}
       transition={{duration: 0.4, delay: 0.3}}
-      viewport={{once: true}} className="mainp">I would love to hear about your project and how I could help. Please fill in the form, and I’ll
+      viewport={{once: true}} className="mainp">Contact me if you are interested in working together. I would love to hear about your project and how I could help. Please fill in the form, and I’ll
           get back to you as soon as possible.</motion.p>
       </div>
       <motion.form initial={{x: 30, opacity: 0}}

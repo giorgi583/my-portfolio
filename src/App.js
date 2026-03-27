@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 // css
 import './index.css'
 const App = () => {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark')
   useEffect(() => {
     localStorage.setItem('theme', theme)
   document.documentElement.classList.add(theme === 'dark' ? theme : "light")
