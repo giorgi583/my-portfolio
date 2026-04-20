@@ -522,7 +522,7 @@ input:invalid {
   color: var(--text-secondary);
 }
 .exp:hover .fa-brands{
-  font-size: 3rem;
+  font-size: 2rem;
   animation: heartbeat 1s infinite;
 }
 @keyframes heartbeat {

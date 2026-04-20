@@ -1,7 +1,8 @@
 import React from 'react'
 import { color, motion } from 'motion/react'
+import '@fortawesome/fontawesome-free/css/all.min.css';
 const Experience = () => {
-  const exp = [{language: 'HTML', level: 'Advanced', icon: <i class="fa-brands fa-html5"></i>, color: '#e34f26'}, {language: 'CSS', level: 'advanced', icon: <i class="fa-brands fa-css3-alt"></i>, color: '#264de4'}, {language: 'JavaScript', level: 'advanced', icon: <i class="fa-brands fa-js"></i>, color: '#f7df1e'}, {language: 'Node.js', level: 'intermediate', icon: <i class="fa-brands fa-node-js"></i>, color: '#68a063'}, {language: 'React', level: 'advanced', icon: <i class="fa-brands fa-react"></i>, color: '#61dbfb'}, {language: 'Sass', level: 'intermediate', icon: <i class="fa-brands fa-sass"></i>, color: '#c69'}]
+  const exp = [{language: 'HTML',  icon: <i class="fa-brands fa-html5"></i>, color: '#e34f26'}, {language: 'CSS', icon: <i class="fa-brands fa-css3-alt"></i>, color: '#264de4'}, {language: 'JavaScript', icon: <i class="fa-brands fa-js"></i>, color: '#f7df1e'}, {language: 'Node.js', icon: <i class="fa-brands fa-node-js"></i>, color: '#68a063'}, {language: 'React', icon: <i class="fa-brands fa-react"></i>, color: '#61dbfb'}, {language: 'Sass', icon: <i class="fa-brands fa-sass"></i>, color: '#c69'}, {language: 'Figma', icon: <i class="fa-brands fa-figma"></i>, color: '#f24e1e'}, {language: 'Git', icon: <i class="fa-brands fa-git-alt"></i>, color: '#f34f29'}, {language: 'GitHub', icon: <i class="fa-brands fa-github"></i>, color: '#000000'}, {language: 'Tailwind', icon: <i class="fa-brands fa-tailwind-css"></i>, color: '#06b6d4'}]
   return (
     <section className="section2" id='skills'>
       <div className="container">
@@ -27,8 +28,6 @@ const Experience = () => {
           className="exp" key={index}>
             <p className="s2ttl">{item.language}</p>
             <p style={{color: item.color}}>{item.icon}</p>
-            <p className="s2p">{item.level}</p>
-          
           </motion.div>
         )
       })}

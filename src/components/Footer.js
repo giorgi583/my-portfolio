@@ -59,7 +59,7 @@ Toast.error(error.message)
       viewport={{once: true}} onSubmit={onSubmit}>
         <input type="text" name="" id="" placeholder="NAME" value={name} onChange={(e) => setName(e.target.value)}/>
         <input type="email" name="" id="" placeholder="EMAIL" value={email} onChange={(e) => setEmail(e.target.value)}/>
-        <textarea type="text" className="bigtxt" placeholder="MESSAGE" value={message} onChange={(e) => setMessage(e.target.value)}/>
+        <textarea rows={6} type="text" className="bigtxt" placeholder="MESSAGE" value={message} onChange={(e) => setMessage(e.target.value)}/>
         <button type="submit">send message <i class="fa-solid fa-paper-plane"></i></button>
       </motion.form>
     </div>
