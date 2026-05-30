@@ -6,34 +6,46 @@ import ProjectsCard from './ProjectsCard'
 const Projects = () => {
   const myProjects = [
     {
-      img: assets.design,
-      title: "DESIGN PORTFOLIO",
-      languages: ["html", "css"]
+      img: assets.sprivaten,
+      title: "PIXEL-PERFECT VISUAL DESIGN",
+      languages: ["html", "css"],
+      link: "https://sprivaten.netlify.app/",
+      accents: ["pixel-perfect", "responsive", "accessibility", "semantic HTML", "CSS-only burger menu", "best practices", "SEO-friendly", "performance optimization"]
     },
     {
-      img: assets.elearning,
-      title: "E-LEARNING",
-      languages: ["html", "css"]
+      img: assets.ecommerce,
+      title: "E-COMMERCE WEBSITE",
+      languages: ["html", "css", "javascript"],
+      link: "https://ecommerce.netlify.app/",
+      accents: ["Theme preference (dark/light)", "FIlters and sorting", "responsive", "carousel", "accessibility", "Full form validations", "API integration", "multiple pages", "SEO-friendly", ]
     },
     {
-      img: assets.todo,
-      title: "TODO",
-      languages: ["html", "css", "javascript"]
+      img: assets.movies,
+      title: "MOVIES APP",
+      languages: ["React", "Plain css"],
+      link: "https://moviesapp.netlify.app/",
+      accents: ["Real APIs", "responsive", "Routes", "Real authorization/authentication", "multi-language", "theme prefference", "Skeleton loading", "product search", "pagination", "lazy loading", "movie details-page" ]
     },
     {
-      img: assets.entertainment,
-      title: "ENTERTAINMENT",
-      languages: ["html", "css", "javascript"]
+      img: assets.tictactoe,
+      title: "TIC-TAC-TOE GAME",
+      languages: ["React", "Plain css"],
+      link: "https://tictactoe.netlify.app/",
+      accents: ["Game logic", "responsive", "colors prefference", "vs computer", "vs friend", "scoreboard", "reset game", "animations", "computer dificulties", "sounds" ]
     },
     {
-      img: assets.memory,
-      title: "MEMORY",
-      languages: ["html", "css", "javascript"]
+      img: assets.aiagency,
+      title: "AGENCY-AI LANDING PAGE",
+      languages: ["React/vite", "Tailwind css"],
+      link: "https://aia.netlify.app/",
+      accents: ["motion effects", "custom cursor", "Real Form submission", "responsive", "theme prefference(dark/light)", "toast notifications",  "modern design", "smooth animations" ]
     },
     {
-      img: assets.galery,
-      title: "GALLERY",
-      languages: ["html", "css", "javascript"]
+      img: assets.resume,
+      title: "AI RESUME BUILDER",
+      languages: ["React/vite", "Tailwind css", "Nodejs", "Express", "MongoDB"],
+      link: "https://resumebuilderai.netlify.app/",
+      accents: ["AI integration", "Full-stack", "Real Authorization/authentication", "responsive", "API integration", "theme prefference(accent colors)", "user-friendly",  "modern design", "smooth animations" ]
     }
   ]
   return (

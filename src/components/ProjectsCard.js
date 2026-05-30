@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'motion/react'
+import { Check } from 'lucide-react'
 const ProjectsCard = ({project}) => {
   return (
     <motion.div 
@@ -12,6 +13,15 @@ const ProjectsCard = ({project}) => {
           <h3 className="s3h3">{project.title}</h3>
           <div className="cardp">
             <p className="s3p">{project.languages.join(", ")}</p>
+            <p>ACCENTS:</p> 
+            <ul className="emphasis">
+              {project.accents && project.accents.map((item, index) => (
+                <li className="s3li" key={index} >
+                  <Check size={16} />
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
           <div className="cardbtns">
             <button className="btn">view project</button>

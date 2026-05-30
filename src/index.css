@@ -51,7 +51,7 @@ li  {
 }
 :root.light {
   --bg-color: url('./assets/freepik_light-mode-pale-mint-green-background-with-gentle-radial-gradient-and-clean-minimal-texture_0001.png');
-  --primary: #00723f;
+  --primary: #009250;
   --bg-secondary: linear-gradient(125deg, rgba(98, 98, 98, 0.492) 0%, rgba(36, 210, 152, 0.456) 50%, rgba(47, 47, 47, 0.5) 100%);
   --text-secondary: #333333;
   --text-primary: #000000;
@@ -120,6 +120,18 @@ i {
   animation: rocket 0.1s linear infinite;
   transform: rotate(45deg);
   color: var(--primary);
+  
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 @keyframes rocket {
   0% {
@@ -407,6 +419,7 @@ max-width: 150px;
 .card {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .cardimg {
   position: relative;
@@ -442,12 +455,18 @@ button:hover {
 }
 .cardp {
   display: flex;
+  flex-direction: column;
   gap: 18px;
   font-size: 1rem;
-  text-transform: uppercase;
   margin-bottom: 20px;
   line-height: 28px;
   font-weight: 500;
+}
+.s3p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 28px;
+  text-transform: uppercase;
 }
 .cardbtns {
   display: flex;
@@ -521,7 +540,7 @@ input:invalid {
   resize: none;
   color: var(--text-secondary);
 }
-.exp:hover .fa-brands{
+.exp:hover .fa-brands, .exp:hover .fa-solid {
   font-size: 2rem;
   animation: heartbeat 1s infinite;
 }
@@ -576,9 +595,31 @@ form button {
   align-items: center;
   gap: 20px;
 }
-
+.emphasis {
+  display: flex;
+  max-width: 100%;
+  gap: 10px;
+  flex-wrap: nowrap;
+  transition: all 5s linear;
+}
 .conttext p {
   margin: 0;
+}
+.s3li {
+  background: var(--primary);
+  color: var(--text-primary);
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: flex;
+  white-space: nowrap;
+  max-height: fit-content;
+  align-items: center;
+}
+.card:hover .emphasis {
+  animation: scroll 10s linear infinite;
+}
+.emphasis:hover {
+  animation-play-state: paused !important;
 }
 .conttext h2 {
   font-size: 2.5rem;
