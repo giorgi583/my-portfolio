@@ -117,7 +117,7 @@ i {
   z-index: 1000;
 }
 .rocket {
-  animation: rocket 0.1s linear infinite;
+  animation: rocket 0.1s linear infinite alternate;
   transform: rotate(45deg);
   color: var(--primary);
   
@@ -127,7 +127,7 @@ i {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(-200%);
+    transform: translateX(-400%);
   }
   100% {
     transform: translateX(0);
@@ -293,9 +293,8 @@ button {
 .profileimage {
   width: 174.21px;
   margin: auto;
-  margin-top: 49px;
-  margin-bottom: 40px;
-  filter: grayscale(100%);
+  margin-top: 60px;
+  margin-bottom: 30px;
   animation: float 5s ease-in-out infinite;
 }
 @keyframes float {
@@ -600,7 +599,6 @@ form button {
   max-width: 100%;
   gap: 10px;
   flex-wrap: nowrap;
-  transition: all 5s linear;
 }
 .conttext p {
   margin: 0;
@@ -616,7 +614,7 @@ form button {
   align-items: center;
 }
 .card:hover .emphasis {
-  animation: scroll 10s linear infinite;
+  animation: scroll 15s linear infinite;
 }
 .emphasis:hover {
   animation-play-state: paused !important;
@@ -778,7 +776,20 @@ flex-shrink: 0;
     cursor: pointer;
     transform: scale(1.3);
   }
-  
+  .card:hover .emphasis {
+  animation: scroll 15s linear infinite;
+}
+  @keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-400%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
   .expdivs {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -943,6 +954,20 @@ flex-shrink: 0;
     font-size: 2rem;
     letter-spacing: -0.44px;
   }
+   .card:hover .emphasis {
+  animation: scroll 15s linear infinite;
+}
+  @keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
     .section1 {
     position: relative;
     display: flex;

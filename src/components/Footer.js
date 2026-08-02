@@ -73,12 +73,12 @@ Toast.error(error.message)
       <h1>Socials</h1>
       <nav>
         <ul>
-          <li><a target="_blank" href="https://github.com/giorgi583"><i className="fa-brands fa-github"></i></a></li>
-          <li><a target="_blank" href="https://www.frontendmentor.io/profile/giorgi583" className="frontend"><img
+          <li><a target="_blank" aria-label='view my github' href="https://github.com/giorgi583"><i className="fa-brands fa-github"></i></a></li>
+          <li><a target="_blank" aria-label='view my frontend' href="https://www.frontendmentor.io/profile/giorgi583" className="frontend"><img
                 src={theme === "dark" ? assets.frontend : assets.frontendBlack} alt="frontend icon" width="19.68"/></a></li>
-          <li><a target="_blank" href="https://www.linkedin.com/in/giorgi-kutateladze-45086323b/"><i
+          <li><a target="_blank" aria-label='view my linkedin' href="https://www.linkedin.com/in/giorgi-kutateladze-45086323b/"><i
                 className="fa-brands fa-linkedin"></i></a></li>
-          <li><a target="_blank" href="https://www.facebook.com/giorgi.kutateladze.14"><i
+          <li><a target="_blank" aria-label='view my facebook' href="https://www.facebook.com/giorgi.kutateladze.14"><i
                 className="fa-brands fa-facebook"></i></a></li>
         </ul>
       </nav>

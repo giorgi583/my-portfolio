@@ -17,7 +17,7 @@ const Hero = () => {
       animate={{y: 0, opacity: 1}}
       transition={{duration: 0.5, delay: 0.5}}
       className="profileimage">
-        <img className="profileimg" src={assets.pimg} alt="my image" />
+        <img className="profileimg" src={assets.avatar} alt="my image" />
       </motion.div>
       <div className="container">
       <motion.div 
@@ -27,7 +27,7 @@ const Hero = () => {
       className="maintxt">
         <h2 className="mainttl">Nice to meet you! I’m Giorgi.</h2>
         <p className="mainp">Based in Georgia, I’m a full stack developer passionate about building accessible websites that
-          users love, Specializing in modern web technologies and responsive design.</p>
+          users love, Specializing in modern web technologies, responsive design and accessibility as weel as cyber-security.</p>
         <button><a href="#contact">contact me</a></button>
       </motion.div>
       </div>

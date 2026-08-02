@@ -9,27 +9,23 @@ const Projects = () => {
       img: assets.sprivaten,
       title: "PIXEL-PERFECT VISUAL DESIGN",
       languages: ["html", "css"],
-      link: "https://sprivaten.netlify.app/",
+      githubLink: "https://github.com/giorgi583/final-project.git",
+      link: "https://giorgi583.github.io/final-project/",
       accents: ["pixel-perfect", "responsive", "accessibility", "semantic HTML", "CSS-only burger menu", "best practices", "SEO-friendly", "performance optimization"]
-    },
-    {
-      img: assets.ecommerce,
-      title: "E-COMMERCE WEBSITE",
-      languages: ["html", "css", "javascript"],
-      link: "https://ecommerce.netlify.app/",
-      accents: ["Theme preference (dark/light)", "FIlters and sorting", "responsive", "carousel", "accessibility", "Full form validations", "API integration", "multiple pages", "SEO-friendly", ]
     },
     {
       img: assets.movies,
       title: "MOVIES APP",
       languages: ["React", "Plain css"],
-      link: "https://moviesapp.netlify.app/",
+      githubLink: "https://github.com/giorgi583/react_final.git",
+      link: "https://giorgi583.github.io/react_final/",
       accents: ["Real APIs", "responsive", "Routes", "Real authorization/authentication", "multi-language", "theme prefference", "Skeleton loading", "product search", "pagination", "lazy loading", "movie details-page" ]
     },
     {
       img: assets.tictactoe,
       title: "TIC-TAC-TOE GAME",
       languages: ["React", "Plain css"],
+      githubLink: "https://github.com/giorgi583/Tic-tac-toe-game.git",
       link: "https://tictactoe.netlify.app/",
       accents: ["Game logic", "responsive", "colors prefference", "vs computer", "vs friend", "scoreboard", "reset game", "animations", "computer dificulties", "sounds" ]
     },
@@ -37,15 +33,33 @@ const Projects = () => {
       img: assets.aiagency,
       title: "AGENCY-AI LANDING PAGE",
       languages: ["React/vite", "Tailwind css"],
+      githubLink: "https://github.com/giorgi583/Agency-AI.git",
       link: "https://aia.netlify.app/",
       accents: ["motion effects", "custom cursor", "Real Form submission", "responsive", "theme prefference(dark/light)", "toast notifications",  "modern design", "smooth animations" ]
     },
     {
       img: assets.resume,
       title: "AI RESUME BUILDER",
-      languages: ["React/vite", "Tailwind css", "Nodejs", "Express", "MongoDB"],
+      languages: ["React/vite", "Tailwind css", "Nodejs", "MongoDB"],
+      githubLink: "https://github.com/giorgi583/Resume-builder-website.git",
       link: "https://resumebuilderai.netlify.app/",
-      accents: ["AI integration", "Full-stack", "Real Authorization/authentication", "responsive", "API integration", "theme prefference(accent colors)", "user-friendly",  "modern design", "smooth animations" ]
+      accents: [ "Full-stack", "Real authentication", "AI features", "responsive", "API integration", "theme prefference(accent colors)", "user-friendly",  "modern design", "routes" ]
+    },
+    {
+      img: assets.ecommerce,
+      title: "E-COMMERCE STORE",
+      languages: ["React/vite", "Tailwind css", "Nodejs", "PostgreSQL"],
+      githubLink: "https://github.com/giorgi583/e-commerce.git",
+      link: "https://ecommercestore.netlify.app/",
+      accents: [ "Full-stack", "Real Authorization/authentication", "admin pages", "responsive", "Lazy loading", "user-friendly", "pagination", "filtering",  "API integration",  "routes" ]
+    },
+    {
+      img: assets.financial,
+      title: "FINANCIAL TRACKER",
+      languages: ["React/vite", "Tailwind css", "Nodejs", "PostgreSQL"],
+      githubLink: "https://github.com/giorgi583/financial-tracker.git",
+      link: "https://financial.netlify.app/",
+      accents: [ "Full-stack", "Real authentication", "responsive", "multi-language", "API integration", "theme prefference(accent colors && dark/light)", "user-friendly",  "modern design", "routes", "anaytics" ]
     }
   ]
   return (

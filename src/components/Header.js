@@ -32,7 +32,7 @@ const Header = ({theme, setTheme}) => {
           <li><a onClick={()=> setsidebaropen(false)} href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div className='dark-mode' aria-label='theme switch' onClick={() => setTheme(theme === "dark" ? "light" : "dark")}><img src={theme=== "dark" ? assets.light : assets.dark}  alt="" /></div>
+      <div className='dark-mode' onClick={() => setTheme(theme === "dark" ? "light" : "dark")}><img src={theme=== "dark" ? assets.light : assets.dark}  alt="" /></div>
     </div>
     <div className={`overlay-full ${sidebarOpen ? 'active' : ''}`}></div>
   </motion.header>
