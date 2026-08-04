@@ -1,6 +1,5 @@
-import React, { useState, useEffect} from 'react'
+import { useState, useEffect} from 'react'
 import { Toaster } from 'react-hot-toast'
-import { RocketIcon } from 'lucide-react'
 // components
 import Header from './components/Header'
 import Main from './components/Main'

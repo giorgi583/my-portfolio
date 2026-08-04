@@ -1,4 +1,4 @@
-import React from 'react'
+
 import assets from '../assets/assets'
 import { motion } from 'motion/react'
 // components
@@ -26,7 +26,7 @@ const Projects = () => {
       title: "TIC-TAC-TOE GAME",
       languages: ["React", "Plain css"],
       githubLink: "https://github.com/giorgi583/Tic-tac-toe-game.git",
-      link: "https://tictactoe.netlify.app/",
+      link: "https://giorgi583.github.io/Tic-tac-toe-game/",
       accents: ["Game logic", "responsive", "colors prefference", "vs computer", "vs friend", "scoreboard", "reset game", "animations", "computer dificulties", "sounds" ]
     },
     {
@@ -34,7 +34,7 @@ const Projects = () => {
       title: "AGENCY-AI LANDING PAGE",
       languages: ["React/vite", "Tailwind css"],
       githubLink: "https://github.com/giorgi583/Agency-AI.git",
-      link: "https://aia.netlify.app/",
+      link: "https://giorgi583.github.io/Agency-AI/",
       accents: ["motion effects", "custom cursor", "Real Form submission", "responsive", "theme prefference(dark/light)", "toast notifications",  "modern design", "smooth animations" ]
     },
     {
@@ -42,7 +42,7 @@ const Projects = () => {
       title: "AI RESUME BUILDER",
       languages: ["React/vite", "Tailwind css", "Nodejs", "MongoDB"],
       githubLink: "https://github.com/giorgi583/Resume-builder-website.git",
-      link: "https://resumebuilderai.netlify.app/",
+      link: "https://resume-builder-website-2qcwwoa4o-me-4758.vercel.app",
       accents: [ "Full-stack", "Real authentication", "AI features", "responsive", "API integration", "theme prefference(accent colors)", "user-friendly",  "modern design", "routes" ]
     },
     {

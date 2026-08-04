@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import assets from '../assets/assets'
 import { motion } from 'motion/react'
-import { Rocket, RocketIcon } from 'lucide-react'
+import { RocketIcon } from 'lucide-react'
 const Header = ({theme, setTheme}) => {
   const [sidebarOpen, setsidebaropen] = useState(false)
   useEffect(() => {
