@@ -808,8 +808,8 @@ flex-shrink: 0;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0;
-    column-gap: 24px;
-    row-gap: 60px;
+    column-gap: 24px !important;
+    row-gap: 60px !important;
     margin-top: 50px;
   }
   .headerNav ul a {
@@ -1092,8 +1092,8 @@ display: grid;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0;
-    column-gap: 30px;
-    row-gap: 69px;
+    column-gap: 30px !important;
+    row-gap: 69px !important;
     margin-top: 80px;
   }
   .card {
