@@ -19,7 +19,7 @@ const App = () => {
      useEffect(() => {
       document.documentElement.classList.add(theme === 'dark' ? theme : 'light')
       document.documentElement.classList.remove(theme === 'dark' ? 'light' : 'dark')
-     },[])
+     },[theme])
   return (
     <>
     

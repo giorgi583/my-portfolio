@@ -17,7 +17,7 @@ const Hero = () => {
       animate={{y: 0, opacity: 1}}
       transition={{duration: 0.5, delay: 0.5}}
       className="profileimage">
-        <img className="profileimg" src={assets.avatar} alt="my image" />
+        <img className="profileimg" src={assets.avatar} alt="profile avatar" />
       </motion.div>
       <div className="container">
       <motion.div 
