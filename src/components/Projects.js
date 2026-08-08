@@ -55,8 +55,8 @@ const Projects = () => {
       title: "E-COMMERCE STORE",
       languages: ["React/vite", "Tailwind css", "Nodejs", "PostgreSQL"],
       githubLink: "https://github.com/giorgi583/e-commerce.git",
-      deployment: ["Netlify"],
-      link: "https://ecommercestore.netlify.app/",
+      deployment: ["Render", "Neon"],
+      link: "https://e-commerce-owmt.onrender.com/",
       accents: [ "Full-stack", "Real Authorization/authentication", "admin pages", "responsive", "Lazy loading", "user-friendly", "pagination", "filtering",  "API integration",  "routes" ]
     },
     {
