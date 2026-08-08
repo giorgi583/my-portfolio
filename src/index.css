@@ -533,7 +533,7 @@ button:hover {
   margin-top: 20px;
   margin-bottom: 7px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 /* footer */
 footer {
@@ -710,6 +710,7 @@ form button {
   border: 1px solid var(--border);
 flex-shrink: 0;
 }
+
 .header h1 {
   order: 1;
   flex-grow: 0;
@@ -960,6 +961,10 @@ flex-shrink: 0;
     padding: 0 20px;   /* equal left/right spacing */
     margin: 0 auto;    /* center everything */
   }
+  .s3h3 {
+  flex-direction: row;
+  justify-content: space-between;
+}
   .header {
     width: 100%;
     max-width: 1100px;
