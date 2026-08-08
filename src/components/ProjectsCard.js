@@ -10,7 +10,7 @@ const ProjectsCard = ({project}) => {
             <div className="overlay"> <button className="deskbtn"><a href={project.link} target="_blank" rel="noopener noreferrer">view project</a></button> <button className="deskbtn"><a href={project.githubLink} target="_blank" rel="noopener noreferrer">view
                 code</a></button></div>
           </div>
-          <h3 className="s3h3">{project.title}</h3>
+          <h3 className="s3h3">{project.title}  <div className="deploy"><div className="dot"><div className="dot2"></div></div><div className='sites'>{project.deployment.join(" | ")}</div></div></h3>
           <div className="cardp">
             <p className="s3p">{project.languages.join(", ")}</p>
             <p>ACCENTS:</p> 

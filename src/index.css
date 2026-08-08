@@ -476,12 +476,64 @@ button:hover {
   flex-direction: column;
   gap: 40px;
 }
+.deploy {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.8rem;
+  padding: 4px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  align-items: center;
+  font-weight: bold;
+
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  margin-left: 8px;
+  position: relative;
+}
+.dot2 {
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  animation: pulse 1s infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sites {
+  display: flex;
+  gap: 10px;
+  font-size: 0.8rem;
+  background-color: black;
+  color: white;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 10px;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1; }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
 .s3h3 {
   font-size: 1.2rem;
   line-height: 32px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 7px;
+  display: flex;
+  justify-content: space-between;
 }
 /* footer */
 footer {

@@ -10,6 +10,7 @@ const Projects = () => {
       title: "PIXEL-PERFECT VISUAL DESIGN",
       languages: ["html", "css"],
       githubLink: "https://github.com/giorgi583/final-project.git",
+      deployment: ["Github pages"],
       link: "https://giorgi583.github.io/final-project/",
       accents: ["pixel-perfect", "responsive", "accessibility", "semantic HTML", "CSS-only burger menu", "best practices", "SEO-friendly", "performance optimization"]
     },
@@ -18,6 +19,7 @@ const Projects = () => {
       title: "MOVIES APP",
       languages: ["React", "Plain css"],
       githubLink: "https://github.com/giorgi583/react_final.git",
+      deployment: ["Github pages"],
       link: "https://giorgi583.github.io/react_final/",
       accents: ["Real APIs", "responsive", "Routes", "Real authorization/authentication", "multi-language", "theme prefference", "Skeleton loading", "product search", "pagination", "lazy loading", "movie details-page" ]
     },
@@ -26,6 +28,7 @@ const Projects = () => {
       title: "TIC-TAC-TOE GAME",
       languages: ["React", "Plain css"],
       githubLink: "https://github.com/giorgi583/Tic-tac-toe-game.git",
+      deployment: ["Github pages"],
       link: "https://giorgi583.github.io/Tic-tac-toe-game/",
       accents: ["Game logic", "responsive", "colors prefference", "vs computer", "vs friend", "scoreboard", "reset game", "animations", "computer dificulties", "sounds" ]
     },
@@ -34,6 +37,7 @@ const Projects = () => {
       title: "AGENCY-AI LANDING PAGE",
       languages: ["React/vite", "Tailwind css"],
       githubLink: "https://github.com/giorgi583/Agency-AI.git",
+      deployment: ["Github pages"],
       link: "https://giorgi583.github.io/Agency-AI/",
       accents: ["motion effects", "custom cursor", "Real Form submission", "responsive", "theme prefference(dark/light)", "toast notifications",  "modern design", "smooth animations" ]
     },
@@ -42,6 +46,7 @@ const Projects = () => {
       title: "AI RESUME BUILDER",
       languages: ["React/vite", "Tailwind css", "Nodejs", "MongoDB"],
       githubLink: "https://github.com/giorgi583/Resume-builder-website.git",
+      deployment: ["Vercel", "Render", "MongoDB Atlas"],
       link: "https://resume-builder-website-2qcwwoa4o-me-4758.vercel.app",
       accents: [ "Full-stack", "Real authentication", "AI features", "responsive", "API integration", "theme prefference(accent colors)", "user-friendly",  "modern design", "routes" ]
     },
@@ -50,6 +55,7 @@ const Projects = () => {
       title: "E-COMMERCE STORE",
       languages: ["React/vite", "Tailwind css", "Nodejs", "PostgreSQL"],
       githubLink: "https://github.com/giorgi583/e-commerce.git",
+      deployment: ["Netlify"],
       link: "https://ecommercestore.netlify.app/",
       accents: [ "Full-stack", "Real Authorization/authentication", "admin pages", "responsive", "Lazy loading", "user-friendly", "pagination", "filtering",  "API integration",  "routes" ]
     },
@@ -58,7 +64,8 @@ const Projects = () => {
       title: "FINANCIAL TRACKER",
       languages: ["React/vite", "Tailwind css", "Nodejs", "PostgreSQL"],
       githubLink: "https://github.com/giorgi583/financial-tracker.git",
-      link: "https://financial.netlify.app/",
+      deployment: ["Vercel", "Northflank", "Neon"],
+      link: "https://financial-tracker-lovat.vercel.app/",
       accents: [ "Full-stack", "Real authentication", "responsive", "multi-language", "API integration", "theme prefference(accent colors && dark/light)", "user-friendly",  "modern design", "routes", "anaytics" ]
     }
   ]
