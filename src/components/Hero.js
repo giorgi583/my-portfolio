@@ -27,7 +27,7 @@ const Hero = () => {
       className="maintxt">
         <h2 className="mainttl">Nice to meet you! I’m Giorgi.</h2>
         <p className="mainp">Based in Georgia, I’m a full stack developer passionate about building accessible websites that
-          users love, Specializing in modern web technologies, responsive design and accessibility as weel as cyber-security.</p>
+          users love, Specializing in modern web technologies, responsive design and accessibility as well as cyber-security.</p>
         <button><a href="#contact">contact me</a></button>
       </motion.div>
       </div>
