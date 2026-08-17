@@ -15,6 +15,15 @@ const Projects = () => {
       accents: ["pixel-perfect", "responsive", "accessibility", "semantic HTML", "CSS-only burger menu", "best practices", "SEO-friendly", "performance optimization"]
     },
     {
+      img: assets.ecommercestatic,
+      title: "STATIC ECOMMERCE STORE",
+      languages: ["html", "css", "javascript"],
+      githubLink: "https://github.com/giorgi583/js_fp.git",
+      deployment: ["Github pages"],
+      link: "https://giorgi583.github.io/js_fp/",
+      accents: ["responsive", "accessibility", "semantic HTML", "Theme prefference", "best practices", "SEO-friendly", "performance optimization", "product search", "product filtering", "product sorting", "form validation", "fake API"]
+    },
+    {
       img: assets.movies,
       title: "MOVIES APP",
       languages: ["React", "Plain css"],
@@ -57,7 +66,7 @@ const Projects = () => {
       githubLink: "https://github.com/giorgi583/e-commerce.git",
       deployment: ["Render", "Neon"],
       link: "https://e-commerce-owmt.onrender.com/",
-      accents: [ "Full-stack", "Real Authorization/authentication", "admin pages", "responsive", "Lazy loading", "user-friendly", "pagination", "filtering",  "API integration",  "routes" ]
+      accents: [ "Full-stack", "Real Authorization/authentication", "admin pages", "responsive", "Lazy loading", "user-friendly", "pagination",  "API integration",  "product sorting/filtering", "cart", "checkout", "details page" ]
     },
     {
       img: assets.financial,
